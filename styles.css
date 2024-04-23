@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.centered {
+    height: fit-content;
+    width: 90vh;
+}
+
+.hero, .footer {
+    background-color: #1f2937;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.hero, .info, .quote, .signup, .footer, .centered{
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    flex: 5;
+}
+
+.info {
+    flex: 5;
+}
+
+.quote {
+    flex: 4;
+}
+
+.signup {
+    flex: 3;
+}
+
+.footer {
+    flex: 1;
+}
+
