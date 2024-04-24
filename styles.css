@@ -1,11 +1,33 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 200vh;
+    height: 100%;
+    margin: 0px;
 }
+
 .centered {
-    height: fit-content;
-    width: 90vh;
+    display: block;
+    width: 70vw
+}
+
+* {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:visited, a ,*{
+    color: white;
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .hero, .footer {
@@ -16,28 +38,118 @@ body {
     background-color: #e5e7eb;
 }
 
+button {
+    background-color: blue;
+}
+
+
 .hero, .info, .quote, .signup, .footer, .centered{
     display: flex;
     justify-content: center;
 }
 
+/* HERO */
+
 .hero {
     flex: 5;
 }
+
+.centered.one {
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.header, .links, .main-content, .awesome, .hero-main, .img-placeholder {
+    display: flex;
+}
+
+.header {
+    flex: 4;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.links {
+    gap: 20px;
+}
+
+.hero-main {
+    flex: 6;
+    justify-content: c;
+}
+
+.main-content {
+    flex: 2;
+    margin-right: 85px;
+    flex-direction: column;
+}
+
+.emptyhero {
+    flex: 3;
+}
+
+.img-placeholder{
+    background-color: #a7abadad;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-placeholder, .main-content {
+    flex: 1;
+}
+
+.logotext {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bolder;
+}
+
+.main-text {
+    flex: 2;
+    font-size: 48px;
+    font-weight: bolder;
+    text-wrap: wrap;
+}
+
+.sub-text {
+    flex: 2;
+    text-wrap: wrap;
+}
+
+.main-button {
+    flex: 1;
+}
+
+
+/* INFO */
 
 .info {
     flex: 5;
 }
 
+.centered.two {
+    flex-direction: column;
+}
+
+/* QUOTE */
+
 .quote {
     flex: 4;
 }
+
+/* SIGNUP */
 
 .signup {
     flex: 3;
 }
 
+/* FOOTER */
+
 .footer {
     flex: 1;
 }
 
+.centered.five {
+    justify-content: center;
+    align-items: center;
+}
