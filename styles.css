@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 200vh;
+    min-height: 270vh;
     height: 100%;
     margin: 0px;
 }
@@ -59,11 +59,23 @@ button {
     justify-content: center;
 }
 
-/* HERO */
-
+/* SIZING */
 .hero {
-    flex: 5;
+    flex: 6;
 }
+
+.info {
+    flex: 4;
+}
+
+.quote {
+    flex: 3;
+}
+
+.signup {
+    flex: 4;
+}
+/* HERO */
 
 .centered.one {
     flex-direction: column;
@@ -144,21 +156,18 @@ button {
     flex: 1;
 }
 
-.main-button:hover {
+.main-button:hover, .sub-button:hover {
     background-color: #2d62b1ed;
 }
 
 
 /* INFO */
 
-.info {
-    flex: 5;
-}
 
 .centered.two {
     flex-direction: column;
     justify-content: center;
-    margin: 30px 0px;
+    margin-top: 30px;
 }
 
 .info-container {
@@ -175,13 +184,13 @@ button {
     font-size: 47px;
     color: #1f2937;
     font-weight: 800;
-    margin-bottom: 30px;
 
 }
 
 .sbtxt-img-container {
     flex-direction: column;
     width: 220px;
+    height: 332px;
 }
 
 .block-placeholder {
@@ -194,15 +203,17 @@ button {
     box-sizing: border-box;
 }
 
+p {
+    color: #1f2937da;
+    font-size: 20px;
+    text-align: center;
+}
+
 .emptyspace {
     flex: 1;
 }
 
 /* QUOTE */
-
-.quote {
-    flex: 4;
-}
 
 .centered.three {
     flex-direction: column;
@@ -214,9 +225,6 @@ button {
 
 /* SIGNUP */
 
-.signup {
-    flex: 3;
-}
 
 .centered.four {
     align-items: center;
@@ -228,7 +236,6 @@ button {
     width: 100%;
     height: 20vh;
     background-color: #3882f6;
-    margin: 100px 0px;
     border-radius: 10px;
     padding: 0px 140px;
 }
@@ -251,8 +258,8 @@ button {
 /* FOOTER */
 
 .footer {
-    padding: 20px 0px;
-    flex: 2;
+
+    flex: 1;
 }
 
 .centered.five {
